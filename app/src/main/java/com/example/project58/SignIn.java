@@ -80,7 +80,7 @@ public class SignIn extends AppCompatActivity {
                     startActivity(i);
                     finish();
 
-                } else {        // if for a registered user ,email id is not correct
+                } else {        // if statement to check for a registered user ,email id is not correct
                     Toast.makeText(SignIn.this, "Please enter Correct email and password !!!", Toast.LENGTH_SHORT).show();
 
                     email.setText(null);
@@ -97,7 +97,7 @@ public class SignIn extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //start mainactivity on back pressed
+        //start mainactivity on back pressed.
         startActivity(new Intent(SignIn.this, MainActivity.class));
         finish();
     }
